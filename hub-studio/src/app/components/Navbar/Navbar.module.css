@@ -18,3 +18,7 @@
     color: #fff;
     margin-left: 10px;
 }
+
+.navLinks a:hover{ 
+    border-bottom: 2px solid #fff;
+}
