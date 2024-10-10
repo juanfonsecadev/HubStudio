@@ -8,10 +8,10 @@ export default function Navbar(){
             <container className={styles.NavContainer}>
                 <div className={styles.Logo}>
                     {/* Logo Image Here */}
-                    <Image src={""} alt="Logo-img"/>
+                    <Image src={"/images/hubstudio.svg"}  alt="hubstudio"  width={400} height={30} />
+
                 </div>
-                <div>
-                    {/* Entrar - registrar-se*/}
+                <div className={styles.NavDiv}>
 
                     <ul className={styles.navLinks}>
                         <Link href={"/"}>   Entrar </Link> 

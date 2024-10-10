@@ -1,22 +1,25 @@
 .navbar{
     background-color: #359ac9;
     padding: 50px 20px;
-    margin-bottom: 20px;
 }
 
 .NavContainer { 
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
 }
 
-.Logo { 
-    width: 65%;
+
+.NavDiv { 
+    width: 33%;
+    display: flex;
+    justify-content: space-around;
 }
 
 .navLinks a { 
     color: #fff;
-    margin-left: 10px;
+    margin-left: 30px;
+    font-weight: 800;
+    font-family: 'Erica One', sans-serif;
 }
 
 .navLinks a:hover{ 
