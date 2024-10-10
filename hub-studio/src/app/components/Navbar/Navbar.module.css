@@ -1,3 +1,27 @@
 .navbar{
-    background-color: aquamarine;
+    background-color: #359ac9;
+    padding: 50px 20px;
+}
+
+.NavContainer { 
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.NavDiv { 
+    width: 33%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navLinks a { 
+    color: #fff;
+    margin-left: 30px;
+    font-weight: 800;
+    font-family: 'Erica One', sans-serif;
+}
+
+.navLinks a:hover{ 
+    border-bottom: 2px solid #fff;
 }

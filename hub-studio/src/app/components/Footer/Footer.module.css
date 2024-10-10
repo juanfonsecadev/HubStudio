@@ -1,0 +1,37 @@
+.footer {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+  }
+  
+  .footerContent {
+    max-width: 500px;
+    margin: auto;
+    text-align: center;
+  }
+  
+  .footerContent h3 {
+    color: #343a40;
+  }
+  
+  .footerContent p {
+    color: #6c757d;
+  }
+  
+  .socials {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .socials li a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .footerBottom {
+    text-align: center;
+    color: #6c757d;
+    margin-top: 20px;
+  }
