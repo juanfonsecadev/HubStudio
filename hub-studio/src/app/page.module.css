@@ -12,6 +12,10 @@
   height: 100%;
 }
 
+
+.Content{ 
+  width: 39%;
+}
 .Content h1{
   font-weight: 900;
   color: #fff;
@@ -28,9 +32,6 @@
 
 }
 
-.Content { 
-  width: 50%;
-}
 
 
 .MockupSection { 
