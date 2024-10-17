@@ -14,7 +14,7 @@ export default function Navbar(){
                 <div className={styles.NavDiv}>
 
                     <ul className={styles.navLinks}>
-                        <Link href={"/"}>   Entrar </Link> 
+                        <Link href={"/login"}>   Entrar </Link> 
                         <Link href={"/"}>   Registrar-se </Link>
                     </ul> 
                 </div>
