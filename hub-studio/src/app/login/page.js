@@ -18,7 +18,7 @@ export default function Login() {
     }
 
     try {
-      const response = await fetch('#', { //TODO colocar a link pro database
+      const response = await fetch('https://localhost:4000/login', { //TODO colocar a link pro database
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

@@ -3,6 +3,13 @@ const https = require('https');
 const fs = require('fs');
 const app = express();
 const port = 4000;
+const bodyParser = require('body-parser');
+
+app.use(bodyParser.json())
+
+
+const users = JSON.parse(fs.readFileSync('./fake-db.json', 'utf-8'));
+
 
 // Carrega os certificados SSL
 const options = {
@@ -10,9 +17,29 @@ const options = {
   cert: fs.readFileSync('server.cert')
 };
 
+
 // Configura rotas
-app.get('/', (req, res) => {
-  res.send('Hello, HTTPS!');
+app.post('/login', (req, res) => {
+
+  const { email, password } = req.body;
+
+  if (!email || !password) {
+    return res.status(400).json({ error: 'Email e senha são obrigatórios.' });
+  }
+
+  const usuario = users.find(user => user.email === email);
+
+  if (!usuario || usuario.password !== password) {
+    return res.status(401).json({ error: 'Credenciais inválidas.' });
+  }
+
+  res.json({ message: 'Login realizado com sucesso!', usuario: {
+    nome: usuario.nome,
+    email: usuario.email,
+    profilePic: usuario.profilePic,
+  } 
+ });
+
 });
 
 // Cria e inicia o servidor HTTPS
